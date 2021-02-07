@@ -48,5 +48,7 @@ THEN I am taken to the corresponding section of the README
 ### Links of Walkthrough Videos
 Since the maximum video lenght in free Screencastify account is 5 mins, I had to separate the walkthrough video into three parts:  
 [Part 1](https://drive.google.com/file/d/1eb-_tchh8flSuk3UcSqV2hI5f_t0lHeu/view)
+
 [Part 2](https://drive.google.com/file/d/1-F7e3emO26k21G3LkAEguzu58yS8nzjs/view)
+
 [Part 3](https://drive.google.com/file/d/1yVsOw4xjlGmPDOrGv_TonWcyXR7XBPzk/view)
