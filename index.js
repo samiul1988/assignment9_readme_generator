@@ -70,19 +70,19 @@ const questions = [
     {
         type: 'list',
         name: 'license',
-        message: 'Choose a license',
+        message: '[LICENSE] Choose a license',
         choices: ['MIT', 'GNU', 'ISC', 'BSD', 'Apache', 'None']
     },
     {
         type: 'input',
         name: 'githubUsername',
-        message: 'Enter your GitHub Username (Required)',
+        message: '[GITHUB USERNAME] Enter your GitHub Username (Required)',
         validate: githubUsername => validateInput(githubUsername, 'Please enter your GitHub username!')
     },
     {
         type: 'input',
         name: 'email',
-        message: 'Enter your email address (Required)',
+        message: '[EMAIL] Enter your email address (Required)',
         validate: email => {
             let response = validateInput(email, 'Please enter an email address!'); 
             if(response) {
@@ -97,14 +97,13 @@ const questions = [
     {
         type: 'input',
         name: 'contributionInfo',
-        message: 'Provide some information about how people can contribute:',
-        // when: ({ confirmContribution }) => confirmContribution,
+        message: '[CONTRIBUTION] Provide some information about how people can contribute:',
         validate: contributionInfo => validateInput(contributionInfo, 'Please enter a brief contribution guideline!')
     },
     {
         type: 'input',
         name: 'testInstruction',
-        message: 'Enter test instructions',
+        message: '[TESTING] Enter test instructions',
         default: "Run the following command to test\n```\nnpm test\n```"
     }
 ];
@@ -121,7 +120,7 @@ function writeToFile(fileName, data) {
     
           resolve({
             success: true,
-            message: 'Readme file created!'
+            message: 'Readme file created successfully!'
           });
         });
       });
@@ -130,13 +129,10 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-        .then(data => {
-            // console.log(data);
-            return generateMarkdown(data);
-        })
-        .then(mdData => writeToFile('./README.md', mdData))
+        .then(data => generateMarkdown(data))
+        .then(mdData => writeToFile('./dist/README.md', mdData))
         .then(({ success, message }) => console.log(message))
-        .catch(err => console.log("Could not complete operation!"));
+        .catch(err => console.log(`Operation failed with following error: ${JSON.stringify(err)}`));
 }
 
 // Function call to initialize app
