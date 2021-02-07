@@ -38,15 +38,17 @@ THEN I am taken to the corresponding section of the README
     * Used "input" prompt type for project title, description, Github username, email, contribution and test sections.
     * The license options are obtained from [here](https://choosealicense.com/community/).
     * For installation and usage info sections, there are two input options:
-        1. If the user wants to provide detailed instructions with code samples, the application opens an editor where the user can provide multi-line descriptions with code blocks
-        2. If the user wants to write simple instructions, then a "input" prompt appears to capture user input
-    * The walkthrough video demonstrates couple of examples with different user inputs  
+        1. If the user wants to provide detailed instructions with code samples, the application opens an editor where the user can provide multi-line descriptions with code blocks.
+        2. If the user wants to write simple instructions, then a "input" prompt appears to capture user input.
+    * The walkthrough video demonstrates couple of examples with different user inputs.
+    * A sample README file generated using this application can be found in the dist folder.  
 
 ### Demo README file generated from this application
 [Sample Readme File](./dist/README.md)
 
 ### Links of Walkthrough Videos
-Since the maximum video lenght in free Screencastify account is 5 mins, I had to separate the walkthrough video into three parts:  
+Since the maximum video length in free Screencastify account is 5 mins, I had to separate the walkthrough video into following three parts:  
+
 [Part 1](https://drive.google.com/file/d/1eb-_tchh8flSuk3UcSqV2hI5f_t0lHeu/view)
 
 [Part 2](https://drive.google.com/file/d/1-F7e3emO26k21G3LkAEguzu58yS8nzjs/view)
