@@ -47,10 +47,7 @@ THEN I am taken to the corresponding section of the README
 [Sample Readme File](./dist/README.md)
 
 ### Demo Run
-<video width="100%" height="400" controls>
-  <source src="./assets/video/Demo_assignment9.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![Demo Run](./assets/images/Demo_assignment9.gif)
 
 ### Links of Walkthrough Videos
 Since the maximum video length in free Screencastify account is 5 mins, I had to separate the walkthrough video into following three parts:  
