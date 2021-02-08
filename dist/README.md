@@ -1,5 +1,5 @@
 # sample_project 
-![GitHub license](https://img.shields.io/badge/license-ISC-blue.svg)
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ---
 ## Description
@@ -26,7 +26,7 @@ const sample = require('sample');
 console.log(sample.awesomeFunc1());
 ``` 
 ## License
-This application is licensed under ISC license.
+This application is licensed under MIT license.
 
 ## Contributing
 Please follow the "fork-and-pull" Git workflow: (1) fork the repo, (2) make changes, (3) push your work, and (4) submit a pull request  
@@ -38,6 +38,6 @@ npm test
 ```
 
 ## Questions
-If you have any question or need more information/examples, feel free to reach out to me here: samiulhayder@ymail.com.
+If you have any question or need more information/examples, feel free to reach out to me here: samiul@ymail.com.
 
 You can also connect with me on [Github](https://github.com/samiul1988) to find relevant projects.
